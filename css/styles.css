@@ -7,6 +7,7 @@
   --sec-background-color: #f5f4fa;
   --button-background-color: #f5f4fa;
   --border-color: #eeeeee;
+  --icon-color: #afb1b8;
 }
 body {
   color: var(--primary-color);
@@ -264,10 +265,50 @@ img {
 }
 /*Особенности*/
 .icon-feature {
+  width: 70px;
+  height: 70px;
+}
+.feature-list {
   width: 270px;
   height: 120px;
+  background: var(--button-background-color);
+  border-radius: 4px;
+  padding: 25px 100px;
 }
 /*Наша команда*/
+.soc-icon {
+  height: 20px;
+  width: 20px;
+  fill: var(--icon-color);
+}
+.soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+.network {
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+.soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--button-color);
+}
+.soc-link:hover .soc-icon {
+  fill: var(--white-color);
+}
+.soc-link:focus .soc-icon {
+  fill: var(--white-color);
+}
 .section-team {
   background-color: var(--sec-background-color);
   min-width: 1200px;
@@ -299,7 +340,6 @@ img {
 }
 .team-position {
   display: block;
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -340,29 +380,43 @@ img {
   color: var(--white-color);
 }
 /*Постоянные клиенты*/
-.icon-client {
+.client {
+  display: flex;
+}
+.client-list {
+  margin-right: 30px;
+  display: flex;
+}
+.icon-client-item {
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon-client:last-child {
+.client-list:last-child {
   margin-right: 0;
 }
-.icon-client:hover,
-.icon-client:focus {
+.icon-client-item:hover {
+  border: 1px solid var(--button-color);
+  cursor: pointer;
+}
+.icon-client-item:focus .logo-client {
   border: 1px solid var(--button-color);
   cursor: pointer;
 }
 .logo-client {
-  height: 100%;
-  width: 100%;
-  fill: var(--primary-color);
+  display: block;
+  fill: var(--icon-color);
 }
-.logo-client:hover,
-.logo-client:focus {
+.icon-client-item:hover .logo-client {
+  fill: var(--button-color);
+  cursor: pointer;
+}
+.icon-client-item:focus .logo-client {
   fill: var(--button-color);
   cursor: pointer;
 }
@@ -423,14 +477,31 @@ img {
   display: inline-flex;
   justify-content: space-between;
 }
+.icon-item {
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
+}
+.networks {
+  display: flex;
+}
 .icon-network {
-  fill: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
   margin-right: 10px;
 }
-.icon-network:hover {
-  fill: var(--button-color);
+.network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.network-link:hover {
+  background-color: var(--button-color);
+}
+.network-link:focus {
+  background-color: var(--button-color);
 }
 .footer-text {
   font-weight: bold;
@@ -442,6 +513,10 @@ img {
   margin-bottom: 20px;
 }
 /*Портфолио*/
+.link-portfolio {
+  text-decoration: none;
+  font-style: normal;
+}
 .button-link {
   padding: 6px 22px;
   margin-right: 8px;
@@ -491,6 +566,10 @@ img {
 }
 .card-menu-item:hover {
   cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-menu-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
