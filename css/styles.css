@@ -70,6 +70,9 @@ img {
 .link:hover .icon-phone {
   fill: var(--button-color);
 }
+.link:focus .icon-phone {
+  fill: var(--button-color);
+}
 .icon-mail {
   height: 12px;
   width: 16px;
@@ -77,6 +80,9 @@ img {
   fill: var(--primary-color);
 }
 .link:hover .icon-mail {
+  fill: var(--button-color);
+}
+.link:focus .icon-mail {
   fill: var(--button-color);
 }
 /*Навигация*/
@@ -111,6 +117,9 @@ img {
 .link {
   text-decoration: none;
   font-style: normal;
+}
+.link:visited {
+  color: inherit;
 }
 .link :hover,
 .link :focus {
@@ -187,9 +196,9 @@ img {
 }
 .main-section {
   display: block;
-  min-width: 1200px;
+  min-width: 1600px;
   background: var(--background-color);
-  margin-right: 0;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -197,7 +206,7 @@ img {
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
+
   height: 600px;
 }
 .section-list {
@@ -273,7 +282,9 @@ img {
   height: 120px;
   background: var(--button-background-color);
   border-radius: 4px;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*Наша команда*/
 .soc-icon {
