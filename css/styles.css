@@ -95,6 +95,7 @@ img {
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
+  color: var(--secondary-color);
 }
 
 .navigation {
