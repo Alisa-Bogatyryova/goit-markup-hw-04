@@ -119,7 +119,7 @@ img {
   font-style: normal;
 }
 .link:visited {
-  color: var(--secondary-color);
+  color: inherit;
 }
 .link :hover,
 .link :focus {
@@ -456,6 +456,7 @@ img {
 }
 .address-position {
   margin-bottom: 9px;
+  color: var(--white-color);
 }
 .address-position:last-child {
   margin-bottom: 0;
