@@ -119,7 +119,7 @@ img {
   font-style: normal;
 }
 .link:visited {
-  color: inherit;
+  color: var(--secondary-color);
 }
 .link :hover,
 .link :focus {
